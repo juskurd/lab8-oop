@@ -18,7 +18,7 @@ public:
     }
 
     virtual void display() const {
-        cout << "Òð³éêà: (" << a << ", " << b << ", " << c << ")";
+        cout << "Ã’Ã°Â³Ã©ÃªÃ : (" << a << ", " << b << ", " << c << ")";
     }
 
     virtual ~Triad() {}
@@ -58,7 +58,7 @@ public:
     }
 
     void display() const override {
-        cout << "Äàòà: ";
+        cout << "Ã„Ã Ã²Ã : ";
         if (a < 10) cout << "0";
         cout << a << ".";
         if (b < 10) cout << "0";
@@ -77,34 +77,35 @@ int main() {
     SetConsoleOutputCP(1251);
     SetConsoleCP(1251);
     Triad t(1, 2, 3);
-    Date d(12, 11, 2025);
+    Date d(15, 11, 2025);
 
-    cout << "Ïî÷àòêîâà òð³éêà: ";
+    cout << "ÃÃ®Ã·Ã Ã²ÃªÃ®Ã¢Ã  Ã²Ã°Â³Ã©ÃªÃ : ";
     t.display();
     cout << endl;
 
-    cout << "Ï³ñëÿ increase(): ";
+    cout << "ÃÂ³Ã±Ã«Ã¿ increase(): ";
     t.increase();
     t.display();
     cout << endl << endl;
 
-    cout << "Ïî÷àòêîâà äàòà: ";
+    cout << "ÃÃ®Ã·Ã Ã²ÃªÃ®Ã¢Ã  Ã¤Ã Ã²Ã : ";
     d.display();
     cout << endl;
 
-    cout << "Ï³ñëÿ increase(): ";
+    cout << "ÃÂ³Ã±Ã«Ã¿ increase(): ";
     d.increase();
     d.display();
     cout << endl;
 
-    cout << "Ï³ñëÿ addDays(365): ";
+    cout << "ÃÂ³Ã±Ã«Ã¿ addDays(365): ";
     d.addDays(365);
     d.display();
     cout << endl << endl;
 
-    cout << "Äåìîíñòðàö³ÿ ïðèíöèïó ï³äñòàíîâêè:" << endl;
+    cout << "Ã„Ã¥Ã¬Ã®Ã­Ã±Ã²Ã°Ã Ã¶Â³Ã¿ Ã¯Ã°Ã¨Ã­Ã¶Ã¨Ã¯Ã³ Ã¯Â³Ã¤Ã±Ã²Ã Ã­Ã®Ã¢ÃªÃ¨:" << endl;
     processTriad(t);
     processTriad(d);
 
     return 0;
 }
+
